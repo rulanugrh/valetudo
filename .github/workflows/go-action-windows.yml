@@ -1,4 +1,4 @@
-name: running-test-in-ubuntu
+name: running-test-in-windows
 on: [push, pull_request]
 
 jobs:
