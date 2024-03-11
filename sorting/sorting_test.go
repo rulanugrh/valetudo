@@ -8,6 +8,7 @@ import (
 )
 
 var arr = []int{1, 4, 5, 7, 2, 10, 11}
+var arr32 = []int32{200, 55, -12, 58, 100}
 
 func TestMain(m *testing.M) {
 	println("runnint unit test")
@@ -74,4 +75,15 @@ func TestCountingSort(t *testing.T) {
 	}
 
 	println("success test counting sort")
+}
+
+func TestRadixSort(t *testing.T) {
+  valid := []int32{-12, 55, 58, 100, 200 }
+  result := sorting.RadixSort(arr32)
+
+  if !assert.Equal(t, valid, result) {
+    println("radix sort invalid test")
+  }
+
+  println("success test radix sort")
 }
