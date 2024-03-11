@@ -28,8 +28,8 @@ func TestLinearSearch(t *testing.T) {
 }
 
 func TestIntepolationSearch(t *testing.T) {
-  data := []int{-10, 2, 6, -11, 44, 20, 12, 55}
-  result := InterPolationSort(data, 44)
+	data := []int{-10, 2, 6, -11, 44, 20, 12, 55}
+	result := InterPolationSort(data, 44)
 
-  assert.Equal(t, 4, result)
+	assert.Equal(t, 4, result)
 }

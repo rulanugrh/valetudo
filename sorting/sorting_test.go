@@ -78,12 +78,12 @@ func TestCountingSort(t *testing.T) {
 }
 
 func TestRadixSort(t *testing.T) {
-  valid := []int32{-12, 55, 58, 100, 200 }
-  result := sorting.RadixSort(arr32)
+	valid := []int32{-12, 55, 58, 100, 200}
+	result := sorting.RadixSort(arr32)
 
-  if !assert.Equal(t, valid, result) {
-    println("radix sort invalid test")
-  }
+	if !assert.Equal(t, valid, result) {
+		println("radix sort invalid test")
+	}
 
-  println("success test radix sort")
+	println("success test radix sort")
 }

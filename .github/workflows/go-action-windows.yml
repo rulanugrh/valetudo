@@ -2,7 +2,7 @@ name: running-test-in-windows
 on: [push, pull_request]
 
 jobs:
-  running-test-in-ubuntu:
+  running-test-in-windows:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v3
