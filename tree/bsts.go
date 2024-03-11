@@ -44,15 +44,15 @@ func (n *BinaryNode) InsertNode(data int64) {
 }
 
 func Printout(w io.Writer, node *BinaryNode, ns int, ch rune) {
-  if node == nil {
-    return
-  }
+	if node == nil {
+		return
+	}
 
-  for i := 0; i < ns; i++ {
-    fmt.Fprintf(w, " ")
-  }
+	for i := 0; i < ns; i++ {
+		fmt.Fprintf(w, " ")
+	}
 
-  fmt.Fprintf(w, "%c:%v\n", ch, node.data)
-  Printout(w, node.left, ns+2, 'L')
-  Printout(w, node.right, ns+2, 'R')
+	fmt.Fprintf(w, "%c:%v\n", ch, node.data)
+	Printout(w, node.left, ns+2, 'L')
+	Printout(w, node.right, ns+2, 'R')
 }
