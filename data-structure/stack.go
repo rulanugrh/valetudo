@@ -17,12 +17,12 @@ func (s *Stack) PushStack(data string) {
   s.Elems = append(s.Elems, data)
 }
 
-func (s *Stack) TopStack() *[]string {
+func (s *Stack) TopStack() []string {
   for len(s.Elems) > 0 {
     n := len(s.Elems) - 1
     s.Elems = s.Elems[:n]
 
-    return &s.Elems
+    return s.Elems
     
   }
 
