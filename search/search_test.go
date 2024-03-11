@@ -21,8 +21,8 @@ func TestNotFoundBinarySearch(t *testing.T) {
 }
 
 func TestLinearSearch(t *testing.T) {
-  data := []string{"ruls", "raa", "kyoo"}
-  result := LinearSearch(data, "raa")
+	data := []string{"ruls", "raa", "kyoo"}
+	result := LinearSearch(data, "raa")
 
-  assert.Equal(t, "Data found", result)
+	assert.Equal(t, "Data found", result)
 }
