@@ -63,3 +63,12 @@ func TestDeleteByIndexStack(t *testing.T) {
   value := arr.JoinStack(", ")
   assert.Equal(t, "yooo, ryoo", value)
 }
+
+func TestQueues(t *testing.T) {
+  arr := Queues{}
+  arr.InsertQueues("araa")
+  arr.InsertQueues("khairunnisa")
+  
+  value := arr.DeleteQueues()
+  assert.Equal(t, "araa", value)
+}
