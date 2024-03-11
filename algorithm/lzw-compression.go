@@ -2,7 +2,7 @@ package algorithm
 
 func CompressLZW(str string) []int {
 	code := 256
-  dict := make(map[string]int)
+	dict := make(map[string]int)
 	for i := 0; i < 256; i++ {
 		dict[string(rune(i))] = i
 	}
