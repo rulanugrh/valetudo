@@ -21,3 +21,15 @@ func TestRecursive(t *testing.T) {
 
   assert.Equal(t, 112, num)
 }
+
+func TestFizzBuzz(t *testing.T) {
+  a := FizzBuzz(5)
+  b := FizzBuzz(3)
+  c := FizzBuzz(15)
+  d := FizzBuzz(19)
+
+  assert.Equal(t, "Fizz", b)
+  assert.Equal(t, "Buzz", a)
+  assert.Equal(t, "FizzBuzz", c)
+  assert.Equal(t, 19, d)
+}
