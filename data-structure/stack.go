@@ -23,7 +23,7 @@ func (s *Stack) TopStack() []string {
     s.Elems = s.Elems[:n]
 
     return s.Elems
-    
+
   }
 
   return nil

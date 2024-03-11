@@ -68,7 +68,7 @@ func TestQueues(t *testing.T) {
   arr := Queues{}
   arr.InsertQueues("araa")
   arr.InsertQueues("khairunnisa")
-  
+
   value := arr.DeleteQueues()
   assert.Equal(t, "araa", value)
 }

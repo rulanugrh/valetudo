@@ -2,7 +2,7 @@ package sorting
 
 import (
 	"testing"
-  
+
   "github.com/stretchr/testify/assert"
 )
 
@@ -41,6 +41,7 @@ func TestSelectionSort(t *testing.T) {
   print("success test selection sort")
 
 }
+
 func TestInsertionSort(t *testing.T) {
   valid := []int{1, 2, 4, 5, 7, 10, 11}
   result := InsertionSort(arr)
