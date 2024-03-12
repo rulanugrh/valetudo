@@ -26,4 +26,8 @@ func main() {
 	for _, d := range dist {
 		fmt.Printf("%4g\n", d)
 	}
+
+  var ts algorithm.Hanoi
+  ts = new(algorithm.Towers)
+  ts.PlayHanoi(3)
 }
