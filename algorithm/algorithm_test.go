@@ -12,3 +12,19 @@ func TestCompressLZW(t *testing.T) {
 
 	assert.Equal(t, expected, str)
 }
+
+func TestKMP(t *testing.T) {
+  str := SearchString("syahara", "sy")
+
+  assert.Equal(t, 0, str)
+}
+
+func TestKMPLast(t *testing.T) {
+  str := SerchNext("syahara", "ha")
+  assert.Equal(t, 3, str)
+}
+
+func TestKMPNone(t *testing.T) {
+  str := SearchString("araa", "rul")
+  assert.Equal(t, -1, str)
+}
