@@ -1,17 +1,16 @@
 package algorithm
 
-
 const (
 	PatternSize int = 100
 )
 
 func SerchNext(stack string, needle string) int {
-  ret := KMP(stack, needle)
-  if len(ret) > 0 {
-    return ret[len(ret)-1]
-  }
+	ret := KMP(stack, needle)
+	if len(ret) > 0 {
+		return ret[len(ret)-1]
+	}
 
-  return -1
+	return -1
 }
 
 func SearchString(stack string, needle string) int {

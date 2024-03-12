@@ -9,14 +9,14 @@ type Hanoi interface {
 type Towers struct{}
 
 func (t *Towers) PlayHanoi(n int) {
-  t.MoveN(n, 1, 2, 3)
+	t.MoveN(n, 1, 2, 3)
 }
 
 func (t *Towers) MoveN(n, from, to, via int) {
 	if n > 0 {
 		t.MoveN(n-1, from, via, to)
-    t.MoveM(from, to)
-    t.MoveN(n-1, via, to, from)
+		t.MoveM(from, to)
+		t.MoveN(n-1, via, to, from)
 	}
 }
 

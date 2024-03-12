@@ -27,7 +27,7 @@ func main() {
 		fmt.Printf("%4g\n", d)
 	}
 
-  var ts algorithm.Hanoi
-  ts = new(algorithm.Towers)
-  ts.PlayHanoi(3)
+	var ts algorithm.Hanoi
+	ts = new(algorithm.Towers)
+	ts.PlayHanoi(3)
 }
